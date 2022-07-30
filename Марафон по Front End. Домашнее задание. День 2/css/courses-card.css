@@ -1,0 +1,94 @@
+.courses__wrap {
+   
+}
+
+.courses__wrap-cards {
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   overflow-x: auto;
+   padding: 0 15px;
+}
+.course__wrap-card {
+   display: flex;
+   flex-direction: column;
+   min-width: 326px;
+   padding: 20px;
+   margin: 20px 20px 20px 0;
+   border-radius: 10px;
+   box-shadow:  0 0 15px rgb(168, 168, 168);
+   transition: .2s all ease;
+   border: 1px solid #fff;
+}
+.course__wrap-card:last-child {
+   margin: 20px 0 ;
+}
+@media (max-width: 360px){
+   .course__wrap-card {
+      min-width: 270px;
+   }
+   .course__wrap-card{
+      padding: 20px 5px;
+   }
+}
+
+
+
+.course__wrap-card div,
+.course__wrap-card button{
+   margin-top: 30px;
+}
+
+.course__logo {
+   font-size: 60px;
+   color: coral;
+}
+
+.course__expansion h3{
+   font-size: 30px;
+   font-weight: 600;
+}
+
+.course__available {
+   flex: 1 0 auto;
+}
+.course__available p{
+   font-size: 16px;
+   margin-top: 7px;
+}
+
+.course__available ._icon-check::before{
+   color: coral;
+   margin-right: 10px;
+}
+
+
+
+
+
+
+
+.course__price {
+   font-size: 30px;
+   color: rgb(110, 110, 245);
+}
+
+.bottom {
+}
+
+.course__buy-btn {
+   padding: 5px 30px;
+   border-radius: 30px;
+   border: 1px solid coral;
+   color: coral;
+   background-color: transparent ;
+   transition: .2s all ease;
+   margin: 0 auto;
+}
+.course__wrap-card:hover{
+   border: 1px solid coral;
+}
+.course__wrap-card:hover .course__buy-btn{
+   color: white;
+   background-color: coral;
+}
